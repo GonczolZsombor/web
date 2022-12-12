@@ -3,19 +3,23 @@ body{
   background-image: url("../img/hatter.png");
 }
 
+#bevezeto{
+  width: 600px;
+}
+
 h1{
   text-align:center;
   font-size: 222%;
   margin: 0px 0px 10px;
   text-transform: uppercase;
-  color: #eb7100;
+  color: #eb7100  ;
 }
-
 h2{
-color: #eb7100;
-text-transform: uppercase;
-}
+  color: #eb7100  ;
+  text-transform: uppercase;
 
+
+}
 p{
   text-align:justify;
 }
@@ -62,6 +66,10 @@ p:first-letter{
 li{
   margin: 3px 0px;
   font-style: italic;
+}
+
+ul {
+  list-style-image: url("../img/bogyo.png");
 }
 
 .blokktores{
