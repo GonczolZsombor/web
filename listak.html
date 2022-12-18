@@ -5,44 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-       .menu{
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
-        }
-        
-        .menu li {
-          float: left;
-        }
-        
-        .menu li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-        }
-        
-        .menu li a:hover:not(.active) {
-          background-color: #111;
-        }
-        
-        .active {
-          background-color: #04AA6D;
-        }
-        
-        div.footer{
-            position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: blue;
-        color: white;
-        text-align: center;
-        }
-      
+  * {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #6e0000;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #6e0000;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
         
         </style>
     <title>Listák</title>
@@ -50,52 +52,54 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
 
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    
 </head>
-<body style="background-color:rgb(252, 252, 252);">
+  <body style="font-family:Verdana;color:#ffffff;">
 
-
+    <div style="background-color:#6e0000;padding:15px;text-align:center;">
+      <h1>Üdvözöllek a Weboldalamon!</h1>
+    </div>
   
-  <ul class="menu">
-      <li><a  href="index.html">Főoldal</a></li>
-      <li><a  href="keplink.html">Képlinkes feladat</a></li>
-      <li><a href="tablazatok.html">Táblázatok</a></li>
-      <li><a class="active" href="listak.html">Lista</a></li>
-      <li><a href="urlap.html">Pizza rendelés</a></li>
-      <li><a href="evszakok.html">Évszakok</a></li>
-    </ul>
+    <div style="overflow:auto">
+      <div class="menu">
+        <a href="index.html">Főoldal</a>
+        <a href="keplink.html">Képlink</a>
+        <a href="listak.html">Lista</a>
+        <a href="tablazatok.html">Órarend</a>
+        <a href="urlap.html">Rendelés</a>
+        <a href="evszakok.html">Évszakok</a>
+      </div>
 
+      <div class="main">
 
     <h1 style="color: blueviolet">Gönczöl Zsombor</h1>
     <h2 style="color: rgb(77, 77, 2);">Listák</h2>
 
     <p style="background-color :rgba(23, 161, 5, 0.719) ; width: 300px;">A kedvenc tárgyaim</p>
-    <ol>
+    <ol style="color: black;">
         <li>IKT</li>
         <li>Matek</li>
         <li>Programozási alapok</li>
     </ol>
 
     <p style="background-color: rgb(5, 139, 128); width: 300px;">A kedvenc szabadidős tevékenységeim</p>
-    <ul>
+    <ul style="color: black;">
         <li>Gépezés</li>
         <li>Szabadidő a családdal</li>
         <li>Kosárlabda</li>
     </ul>
+    </div>
 
-</body>
-</html>
-
-</body>
-</html>
-
-      <div class="footer">
-        <p>Copyright G.ZS</p>
-    </div>  
-
+    <div class="right">
+          <h2>Lista</h2>
+    <p>A lista összefoglalja a kedvent tevékenységeimet, és tantárgyaimat!</p>
+    </div>
+    </div>
+  <div style="background-color:#6e0000;text-align:center;padding:10px;margin-top:7px;">© Copyright GZS</div>
 
 </body>
 </html>

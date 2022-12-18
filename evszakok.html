@@ -7,51 +7,90 @@
     <title>Évszakok</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        
-              div.evszak{
+ * {
+        box-sizing: border-box;
+      }
+      
+      .menu {
+        float: left;
+        width: 20%;
+        text-align: center;
+      }
+      
+      .menu a {
+        background-color: #6e0000;
+        padding: 8px;
+        margin-top: 7px;
+        display: block;
+        width: 100%;
+        color: rgb(255, 255, 255);
+      }
+      
+      .main {
+        float: left;
+        width: 60%;
+        padding: 0 20px;
+      }
+      
+      .right {
+        background-color: #6e0000;
+        float: left;
+        width: 20%;
+        padding: 15px;
+        margin-top: 7px;
+        text-align: center;
+      }
+      
+      @media only screen and (max-width: 620px) {
+        /* For mobile phones: */
+        .menu, .main, .right {
+          width: 100%;
+        }
+      }
+      img{
+        border: 1px solid rgb(0, 0, 0);
+            width: 240px;
+            height: 170px;
+      }
+      div.evszak{
             margin: 1%;
-            float: left;    
+            float: left;
             transition: .8s;
             font-size: x-large;
             font-weight: bolder;
             text-align: center;
-        }
+          }
 
-        img{
-            border: 3px black; 
-            width: 250px;
-        }
-    
-
-        div.evszak:hover {
+          div.evszak:hover{
             transform: scale(1.1);
-        }
-      
-      div.footer{
-            position: fixed;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        background-color: blue;
-        color: white;
-        text-align: center;
-        }
+        }       
+
+ 
+
 </style>
 <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+<link rel="manifest" href="favicon/site.webmanifest">
+<title>Évszakok</title>
 </head>
-<body>
-    <ul class="menu">
-        <li><a  href="index.html">Főoldal</a></li>
-        <li><a  href="keplink.html">Képlinkes feladat</a></li>
-        <li><a href="tablazatok.html">Táblázatok</a></li>
-        <li><a href="listak.html">Lista</a></li>
-        <li><a href="urlap.html">Pizza rendelés</a></li>
-        <li><a class="active" href="evszakok.html">Évszakok</a></li>
-      </ul>
-  
+    <body style="font-family:Verdana;color:#ffffff;">
+
+        <div style="background-color:#6e0000;padding:15px;text-align:center;">
+          <h1>Üdvözöllek a Weboldalamon!</h1>
+        </div>
+
+    <div style="overflow:auto">
+        <div class="menu">
+          <a href="index.html">Főoldal</a>
+          <a href="keplink.html">Képlink</a>
+          <a href="listak.html">Lista</a>
+          <a href="tablazatok.html">Órarend</a>
+          <a href="urlap.html">Rendelés</a>
+          <a href="evszakok.html">Évszakok</a>
+        </div>
+    
+    <div class="main" style="color: black;">
     <div class="evszak">
         <img src="img/osz.jpg" alt="Ősz">
         <p>Ősz</p>
@@ -71,11 +110,16 @@
         <img src="img/nyar.jpg" alt="Nyár">
         <p>Nyár</p>
     </div>
+</div>
 
-    <div class="footer">
-        <p>Copyright G.ZS</p>
-    </div>
+<div class="right">
+    <h2>Évszakok</h2>
+    <p>A képen látható a 4 évszak</p>
+  </div>
+</div>
 
+
+    <div style="background-color:#6e0000;text-align:center;padding:10px;margin-top:7px;">© Copyright GZS</div>
 
 </body>
 </html>
