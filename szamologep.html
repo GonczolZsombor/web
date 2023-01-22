@@ -81,12 +81,12 @@
         <div>
             <form action="javascript:void(0)">
                 <fieldset>
-                    <legend>Egyszerű számológép program</legend>
+                    <legend style="color: black;">Egyszerű számológép program</legend>
                     <input type="number" name="szam" id="szam1" placeholder="SZÁM 1"> .
                     <input type="number" name="szam" id="szam2" placeholder="SZÁM 2"> =
                     <input type="text" id="eredmeny" placeholder="eredmény" readonly>
                     <br><br>
-                    <label for="muv">művelet:</label>
+                    <label for="muv" style="color: black;">művelet:</label>
                     <input type="button" name="muv" value="+" onclick="ad()">
                     <input type="button" name="muv" value="-" onclick="kiv()">
                     <input type="button" name="muv" value="x" onclick="szor()">
@@ -95,7 +95,7 @@
             </form>
             
             <srcipt>    
-                
+
                 function ad() {
                     eredmeny.value = Number(szam1.value) + Number(szam2.value);
                 }
