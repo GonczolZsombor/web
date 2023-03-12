@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+   * {
+  box-sizing: border-box;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.menu a {
+  background-color: #6e0000;
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+}
+
+.right {
+  background-color: #6e0000;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+}
+
+
+
+</style>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<title>Pitagorasz</title>
+</head>
+<body style="font-family:Verdana;color:#ffffff;">
+
+  <div style="background-color:#6e0000;padding:15px;text-align:center;">
+    <h1>Üdvözöllek a Weboldalamon!</h1>
+  </div>
+
+  <div style="overflow:auto">
+    <div class="menu">
+      <a href="index.html">Főoldal</a>
+      <a href="keplink.html">Képlink</a>
+      <a href="listak.html">Lista</a>
+      <a href="tablazatok.html">Órarend</a>
+      <a href="urlap.html">Rendelés</a>
+      <a href="evszakok.html">Évszakok</a>
+      <a href="szamologep.html">Számológép</a>
+      <a href="pitagorasz.html">Pitagorasz</a>
+    </div>
+
+
+    <div class="form2">
+      <h1>Pitagorasz tétel kiszámoló</h1>
+    </div>
+
+    <div class="pita">
+      <img src="img/fnTxcvR.png" alt="">
+    </div>
+
+    <div class="form">
+        <form action="javascript:void(0)">
+            <fieldset>
+                <legend style="color: black;">Adj meg legalább két oldalt!</legend>
+                <p>a oldal: <input type="number" id="aoldal" placeholder="a oldal"></p>
+                <p>b oldal: <input type="number" id="boldal" placeholder="b oldal"></p>
+                <p>c oldal: <span id="osszeg"></span></p>
+                <button onclick="pita(aoldal.value , boldal.value)">SZÁMÍT  </button>
+                <button type="reset" name="muv" value="TÖRLÉS">TÖRLÉS</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <h4>Eredmény:</h4>
+    <span id="osszeg"></span>
+
+    <script>
+      function pita(a, b) { 
+          var c = 0
+          c = Math.sqrt(a * a + b * b)
+
+          document.getElementById("osszeg").innerHTML = c
+              
+      }
+  </script>
+    
+    <div>
+        <h3 style="color: black;">A megadott paraméterek alapján rajzolt háromszög:</h3>
+        <img src="img/AxNF1JC.png" alt="">
+    </div>
+</div>
+    
+    <div style="background-color:#6e0000;text-align:center;padding:10px;margin-top:7px;">© Copyright GZS</div>
+
+
+</body>
+</html>
