@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
    * {
@@ -46,14 +49,6 @@
   }
 }
 
-img{
-        border: 2px solid rgb(0, 0, 0);
-            width: 280px;
-            height: 280px;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-      }
 
 
 </style>
@@ -61,7 +56,7 @@ img{
 <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 <link rel="manifest" href="favicon/site.webmanifest">
-<title>Zsombor Oldala</title>
+<title>Pitagorasz</title>
 </head>
 <body style="font-family:Verdana;color:#ffffff;">
 
@@ -82,18 +77,45 @@ img{
     </div>
 
 
-    <div class="main">
-      <h2>Gönczöl Zsombor</h2>
-      <img src="img/collage.webp" alt="A képen egy sárga témába körelt kollázs kép található." title="Sárga kollázs">
+    <div class="form2">
+      <h1>Pitagorasz tétel kiszámoló</h1>
     </div>
 
-    <div class="right">
-      <h2>Sárga kollázs</h2>
-      <p>A képen egy sárga témába körelt kollázs kép található.</p>
+    <div class="pita">
+      <img src="img/fnTxcvR.png" alt="">
     </div>
-  </div>
 
-  
+    <div class="form">
+        <form action="javascript:void(0)">
+            <fieldset>
+                <legend style="color: black;">Adj meg legalább két oldalt!</legend>
+                <p>a oldal: <input type="number" id="aoldal" placeholder="a oldal"></p>
+                <p>b oldal: <input type="number" id="boldal" placeholder="b oldal"></p>
+                <p>c oldal: <span id="osszeg"></span></p>
+                <button onclick="pita(aoldal.value , boldal.value)">SZÁMÍT  </button>
+                <button type="reset" name="muv" value="TÖRLÉS">TÖRLÉS</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <h4>Eredmény:</h4>
+    <span id="osszeg"></span>
+
+    <script>
+      function pita(a, b) { 
+          var c = 0
+          c = Math.sqrt(a * a + b * b)
+
+          document.getElementById("osszeg").innerHTML = c
+              
+      }
+  </script>
+    
+    <div>
+        <h3 style="color: black;">A megadott paraméterek alapján rajzolt háromszög:</h3>
+        <img src="img/AxNF1JC.png" alt="">
+    </div>
+</div>
     
     <div style="background-color:#6e0000;text-align:center;padding:10px;margin-top:7px;">© Copyright GZS</div>
 

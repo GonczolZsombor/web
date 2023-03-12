@@ -25,3 +25,20 @@ ul {
   .active {
     background-color: #04AA6D;
   }
+
+  .form {
+    color: black;
+  }
+
+  .form2 {
+    color: black;
+    font-family: 'Climate Crisis', cursive;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .pita {
+    margin-left: auto;
+    margin-right: auto;
+    width: 3%;
+  }
